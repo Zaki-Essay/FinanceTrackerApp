@@ -1,11 +1,23 @@
 import './App.css'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Create from "./component/create.tsx";
+import Read from "./component/read.tsx";
+import Update from "./component/update.tsx";
 
 function App() {
 
   return (
-      <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
+      <>
+          <div>
+              <BrowserRouter>
+                  <Routes>
+                      <Route path="/" element={<Create />} />
+                      <Route path="/read" element={<Read />} />
+                      <Route path="/update" element={<Update />} />
+                  </Routes>
+              </BrowserRouter>
+          </div>
+      </>
   )
 }
 
