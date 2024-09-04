@@ -1,4 +1,5 @@
 import {Button} from "@/components/ui/button.tsx";
+import ListCandidatePageComponent from "@/pages/list-candidate-page.tsx";
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
       <>
           <div className="p-4 m-6">
-              <Button> send</Button>
+              <ListCandidatePageComponent/>
           </div>
       </>
   )
